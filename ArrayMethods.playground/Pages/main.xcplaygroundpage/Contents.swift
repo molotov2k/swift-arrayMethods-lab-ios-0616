@@ -16,7 +16,11 @@
  */
 // write your code here
 
+var daysOfTheWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
 
+for day in daysOfTheWeek {
+    print(day)
+}
 
 
 
@@ -27,8 +31,12 @@
  */
 // write your code here
 
+let numDaysOfTheWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+numDaysOfTheWeek.count
 
-
+for (index, day) in numDaysOfTheWeek.enumerate() {
+    print("\(index). \(day)")
+}
 
 
 
@@ -38,7 +46,9 @@
  */
 // write your code here
 
+let emptyArray: [String] = []
 
+emptyArray.isEmpty
 
 
 
@@ -50,7 +60,9 @@
  */
 // write your code here
 
+let reverseEmptyArray: [String] = []
 
+reverseEmptyArray.isEmpty
 
 
 
@@ -63,7 +75,7 @@
  */
 // write your code here
 
-
+daysOfTheWeek.count
 
 
 
@@ -75,7 +87,12 @@
  */
 // write your code here
 
+daysOfTheWeek.append("Saturday")
+daysOfTheWeek.append("Sunday")
 
+for (index, day) in daysOfTheWeek.enumerate() {
+    print("\(index). \(day)")
+}
 
 
 
@@ -86,8 +103,8 @@
  */
 // write your code here
 
-
-
+let sunday = daysOfTheWeek.removeLast()
+daysOfTheWeek.insert(sunday, atIndex: 0)
 
 
 
@@ -98,7 +115,9 @@
  */
 // write your code here
 
-
+for day in daysOfTheWeek {
+    day.lowercaseString
+}
 
 
 
@@ -110,8 +129,10 @@
  */
 // write your code here
 
-
-
+if daysOfTheWeek.count > 5 {
+    daysOfTheWeek = daysOfTheWeek.filter() {$0 != "Saturday" && $0 != "Sunday"}
+}
+print(daysOfTheWeek)
 
 
 
